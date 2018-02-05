@@ -12,5 +12,7 @@ class Basicbitch(Monster):
         self.cuntScream(players)
 
     def cuntScream(self,players):
+        damage = 2
+        print self.name + " used cuntscream! It hit all players for " + str(damage)
         for player in players:
-            player.damage(self,1)
+            player.damage(self,2)

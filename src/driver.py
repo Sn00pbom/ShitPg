@@ -7,10 +7,12 @@ import random
 
 from classes.convert import convertToClass
 from classes.mage import Mage
+def dummysub():
+    level.doLevel(levelSubDummy())
 def dummy():
-    level.doLevel(leveldef.levelDummy())
+    level.doLevel(levelDummy())
 def go1():
-    level.doLevel(leveldef.level1())
+    level.doLevel(level1())
 def go():
     print "go"
 
@@ -33,10 +35,7 @@ def go():
 
     if type(player) == Player:
         print "ih"
-
-
-print("anus IS ANUS")
-
 # go()
 # go1()
 dummy()
+# dummysub()

@@ -2,19 +2,17 @@ from src.classes import *
 from src.monsters import *
 class Level:
     subLevels = [] ##Level array can be appended check for sublevels
-    # players = [] ##array of Instantiated classes
-    # monsters = []#array of monsters
+    players = [] ##array of Instantiated classes
+    monsters = []#array of monsters
 
-    def __init__(self,name,players,monsters):
+    def __init__(self,name):
         self.name = name
-        self.players = players
-        self.monsters = monsters
+        # self.players = players
+        # self.monsters = monsters
         print "db init"
 
     def doRound(self):
         print "db roundstart"
-        for player in self.players:
-            print player.name
 
         #player array loop turns
         for player in self.players:
@@ -65,8 +63,11 @@ def doLevel(level):
             level.doRound()
 
     else:
-        for subLevel in level.subLevels:
-            doLevel(subLevel)
         print "db hassub"
+        print level.subLevels
+        for subLevel in level.subLevels:
+            print "db subleveldo"
+            doLevel(subLevel)
+
 
 
