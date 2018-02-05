@@ -35,6 +35,7 @@ def go():
 
     if type(player) == Player:
         print "ih"
+#testpush
 # go()
 # go1()
 dummy()
