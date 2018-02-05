@@ -1,5 +1,5 @@
-from Mage import Mage
-from Rogue import Rogue
+from mage import Mage
+from rogue import Rogue
 def convertToClass(entity, classtype):
     if classtype == Mage:
         print "db ismage"

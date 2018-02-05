@@ -1,6 +1,6 @@
 
-from src.Player import Player
-from src.Entity import Entity
+from src.player import Player
+from src.entity import Entity
 class Mage(Player):
 
     def __init__(self,name,hp,mp):
