@@ -35,7 +35,7 @@ def go():
 
     if type(player) == Player:
         print "ih"
-
+#new testcommit
 # go()
 # go1()
 dummy()
