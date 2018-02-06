@@ -1,9 +1,13 @@
+
 class Entity(object):
     def __init__(self,name,hp):
+        self.alive = True
+        self.stunned = False
         self.name = name
         self.hp = hp
 
-    alive = True
+
+
 
     def isAlive(self):
         return self.alive

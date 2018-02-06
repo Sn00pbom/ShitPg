@@ -1,6 +1,5 @@
-from src.entity import Entity
+from entity import Entity
 
-# from src.classes.Rogue import Rogue
 class Player(Entity):
     target = None
 

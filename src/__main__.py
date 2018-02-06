@@ -1,13 +1,19 @@
-from src.player import Player
 
-from src.monsters.basicbitch import Basicbitch
-from src.entity import Entity
-from src.level import *
-import random
 
-from classes.convert import convertToClass
-from classes.mage import Mage
+
+# from game.level import level
+from game import level
+from game.level.leveldef import *
+from game.player import Player
+from game.monsters.basicbitch import Basicbitch
+from game.entity import Entity
+from game.input.controlledinput import *
+
+import getch
+
+
 def dummysub():
+
     level.doLevel(levelSubDummy())
 def dummy():
     level.doLevel(levelDummy())
@@ -38,5 +44,11 @@ def go():
 #new testcommit
 # go()
 # go1()
+
+# print controlledIn(['1','2','3'])
+# print getIn(['1','2','3','4'])
+# testGetch()
+
 dummy()
+
 # dummysub()
