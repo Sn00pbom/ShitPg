@@ -10,7 +10,7 @@ def getIn(validInputs):
     input = ''
     while not validInputs.__contains__(input):
         input = getch.getch()
-        print input
+        # print input
     return input
 
 def selectFromList(list):#type adapts, returns 1 element from list

@@ -1,4 +1,5 @@
 
+
 class Level:
     subLevels = [] ##Level array can be appended check for sublevels
     players = [] ##array of Instantiated classes
@@ -15,8 +16,14 @@ class Level:
 
         #player array loop turns
         for player in self.players:
-            if player.isAlive():
+            if player.canAct():
                 player.doTurn(self.monsters)
+            else:
+                if player.isAlive():
+                    print player.name + " is stunned!"
+                else:
+                    print player.name + " isn't breathing..."
+
 
             self.doAllTurnTicks()#poisoneffects etc
 
@@ -54,15 +61,22 @@ class Level:
             player.doRoundEndTick()
         for monster in self.monsters:
             monster.doRoundEndTick()
+    # def updateMonsters(self):
+    #     updated = []
+    #     for monster in self.monsters:
+    #         if monster.isAlive():
+    #             updated.append(monster)
+    #     self.monsters = updated
 
 def doLevel(level):
     if not level.subLevels:#check if level has sublevels or "phases"
-        print "db nosub"
+        print "db nosublevel beginning level..."
+
         while level.anyPlayersAlive() and level.anyMonstersAlive():
             level.doRound()
 
     else:
-        print "db hassub"
+        print "db hassublevel"
         print level.subLevels
         for subLevel in level.subLevels:
             print "db subleveldo"

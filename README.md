@@ -1,4 +1,4 @@
 # ShitPg
 a bad rpg.
 
-strictly text. no graphics. only imagination.
+mostly text. bad graphics. only imagination.

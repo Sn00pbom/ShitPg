@@ -1,6 +1,6 @@
 from ..entity import Entity
 
-def printEntityiesInList(entities):
+def printEntitiesInList(entities):
     i = 0
 
     for e in entities:

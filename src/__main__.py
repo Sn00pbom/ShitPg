@@ -7,6 +7,9 @@ from game.level.leveldef import *
 from game.player import Player
 from game.monsters.basicbitch import Basicbitch
 from game.entity import Entity
+
+
+import pygame
 from game.input.controlledinput import *
 
 import getch
@@ -48,6 +51,7 @@ def go():
 # print controlledIn(['1','2','3'])
 # print getIn(['1','2','3','4'])
 # testGetch()
+
 
 dummy()
 

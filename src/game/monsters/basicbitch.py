@@ -8,7 +8,7 @@ class Basicbitch(Monster):
             self.hp += 7
 
     def doTurn(self,players):
-        print "db bb turn"
+        self.announce()
         self.cuntScream(players)
 
     def cuntScream(self,players):

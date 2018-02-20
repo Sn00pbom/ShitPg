@@ -12,9 +12,10 @@ class Monster(Entity):
             return entity
         else:
             print "db specific"
-    def doTurn(self,players):
-        #no defined monster
-        print "db type-less monster turn"
+    # def doTurn(self,players):
+    #     print "db monster do turn"
+    #     #select spell random
+    #     #select target random
     def doTurnTick(self):
         # print "db monster turn tick"
         pass
