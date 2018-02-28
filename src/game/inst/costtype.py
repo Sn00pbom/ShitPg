@@ -1,0 +1,4 @@
+
+MP = "MP"
+ENERGY = "ENERGY"
+FOCUS = "FOCUS"

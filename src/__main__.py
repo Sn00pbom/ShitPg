@@ -9,7 +9,7 @@ from game.monsters.basicbitch import Basicbitch
 from game.entity import Entity
 
 
-import pygame
+
 from game.input.controlledinput import *
 
 import getch

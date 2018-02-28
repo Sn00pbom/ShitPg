@@ -7,8 +7,7 @@ class Level:
 
     def __init__(self,name):
         self.name = name
-        # self.players = players
-        # self.monsters = monsters
+
         print "db init"
 
     def doRound(self):

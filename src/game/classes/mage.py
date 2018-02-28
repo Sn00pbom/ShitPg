@@ -1,11 +1,13 @@
 from ..player import Player
 from ..inst.spell import *
+from ..inst import spell
 class Mage(Player):
 
-    def __init__(self,name,hp,mp):
+    def __init__(self,name,hp,mpMax):
         self.name = name
         self.hp = hp
-        self.mp = mp
+        self.mpMax = mpMax
+        self.mp = mpMax
         self.spells = loadMageSpells()
 
 
