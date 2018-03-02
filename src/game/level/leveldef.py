@@ -1,7 +1,7 @@
 
 from ..classes import *
 from ..monsters import *
-from ..level import Level
+from level import Level
 
 
 def level1():

@@ -1,6 +1,6 @@
 from ..player import Player
-from ..inst.spell import *
-from ..inst import spell
+
+# from ..inst import spell
 class Mage(Player):
 
     def __init__(self,name,hp,mpMax):
@@ -8,7 +8,7 @@ class Mage(Player):
         self.hp = hp
         self.mpMax = mpMax
         self.mp = mpMax
-        self.spells = loadMageSpells()
+        # self.spells = loadMageSpells()
 
 
 
@@ -20,5 +20,7 @@ class Mage(Player):
             return True
 
 def loadMageSpells():
-    spells = []
-    spells.append(spell.fireball)
+    pass
+    # spells = []
+    # spells.append(spell.fireball)
+    # return spells

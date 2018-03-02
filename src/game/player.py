@@ -17,4 +17,4 @@ class Player(Entity):
         pass
         print "db player round end"
 
-    
+

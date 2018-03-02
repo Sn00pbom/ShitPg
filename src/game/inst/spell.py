@@ -1,5 +1,6 @@
 import costtype
-from ..classes.mage import Mage
+from ..classes import Mage
+
 class Spell():
     def __init__(self,name,func,costType,cost,entityType):
         self.name = name
@@ -24,4 +25,4 @@ def fireball(self,entity):
 all_spells = []
 
 SPELL_FIREBALL = Spell("Fireball",fireball,costtype.MP,10,Mage)
-SPELL_FIREBALL.func()
+

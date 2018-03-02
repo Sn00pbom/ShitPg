@@ -13,13 +13,16 @@ class Dummy(Player):
     def doTurn(self,monsters):
         super(Dummy,self).doTurn(monsters)
 
-        print "Choose target to punch"
+        # print "Choose target to punch"
+        delay_print("Choose target to punch")
 
         printEntitiesInList(monsters)
         self.punch(selectFromList(monsters))
 
 
 
+
     def punch(self,monster):
         monster.damage(self,4)
+        delay_print("POW!........................................")
 
