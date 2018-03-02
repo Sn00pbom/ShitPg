@@ -1,6 +1,7 @@
 from ..entity import Entity
 import time
 import sys
+import pyfiglet
 from ..util import imgtoshell
 
 def delay_print(s,newline = None): #prints a string progressively. can be used as a "wait timer" between actions by using ............
@@ -43,4 +44,5 @@ def printTitle():
     #######################################################
     """
     delay_print(title)
+    # delay_print(pyfiglet.figlet_format("ShitPG",font='graffiti'))
     # imgtoshell.convertAndPrint('./game/shitpg.bmp')

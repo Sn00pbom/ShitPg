@@ -7,9 +7,7 @@ from game.level.leveldef import *
 from game.player import Player
 from game.monsters.basicbitch import Basicbitch
 from game.entity import Entity
-
-
-
+from game.input import controlledinput
 
 from game.input.controlledinput import *
 
@@ -54,13 +52,30 @@ def go():
 # print controlledIn(['1','2','3'])
 # print getIn(['1','2','3','4'])
 # testGetch()
+
+def mainMenu():
+    printTitle()
+    delay_print("1: Begin game\n2: Save\n3: Load\n4: Quit")
+    inp = controlledinput.getIn(['1','2','3','4'])
+    if inp == '1': dummy(running)
+    elif inp == '4':
+        delay_print("Quitting................")
+        sys.exit()
+    elif inp == '2':
+        #save
+        pass
+    elif inp == '3':
+        #load
+        pass
+
+running = True
 def gameLoop():
-    running = True
+
     while running:
         #do shit
-        printTitle()
 
-        dummy(running)
+        mainMenu()
+
 
 
 
