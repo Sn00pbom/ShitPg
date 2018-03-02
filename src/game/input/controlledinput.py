@@ -23,7 +23,7 @@ def selectFromList(list):#type adapts, returns 1 element from list
             c = s[0]
             options.append(c)
         inp = getIn(options)
-        print inp
+        # print inp
         out = list[int(inp)-1]
         return out
 

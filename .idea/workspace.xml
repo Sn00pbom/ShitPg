@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c476e4a-06f0-4073-bf87-e4d2890c8eb5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.floo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.flooignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/shitpg.bmp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/util/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/util/imgtoshell.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/__main__.py" afterPath="$PROJECT_DIR$/src/__main__.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/classes/dummy.py" afterPath="$PROJECT_DIR$/src/game/classes/dummy.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/classes/mage.py" afterPath="$PROJECT_DIR$/src/game/classes/mage.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/input/cmdinterface.py" afterPath="$PROJECT_DIR$/src/game/input/cmdinterface.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/inst/__init__.py" afterPath="$PROJECT_DIR$/src/game/inst/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/inst/spell.py" afterPath="$PROJECT_DIR$/src/game/inst/spell.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/level/leveldef.py" afterPath="$PROJECT_DIR$/src/game/level/leveldef.py" />
-      <change beforePath="$PROJECT_DIR$/src/game/player.py" afterPath="$PROJECT_DIR$/src/game/player.py" />
+      <change beforePath="$PROJECT_DIR$/src/game/input/controlledinput.py" afterPath="$PROJECT_DIR$/src/game/input/controlledinput.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +29,8 @@
           <file leaf-file-name="cmdinterface.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/input/cmdinterface.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+                <state relative-caret-position="143">
+                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#27#0" expanded="true" />
                   </folding>
@@ -76,7 +64,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="level.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/game/level/level.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-414">
@@ -163,11 +151,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlledinput.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controlledinput.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/input/controlledinput.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+                <state relative-caret-position="468">
+                  <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -248,7 +236,6 @@
         <option value="$PROJECT_DIR$/src/game/classes/__init__.py" />
         <option value="$PROJECT_DIR$/src/game/input/keyboardinput.py" />
         <option value="$PROJECT_DIR$/src/game/monsters/__init__.py" />
-        <option value="$PROJECT_DIR$/src/game/input/controlledinput.py" />
         <option value="$PROJECT_DIR$/src/game/inst/effect.py" />
         <option value="$PROJECT_DIR$/src/game/inst/item.py" />
         <option value="$PROJECT_DIR$/../../Python/krintvheadergen.py" />
@@ -272,6 +259,7 @@
         <option value="$PROJECT_DIR$/src/__main__.py" />
         <option value="$PROJECT_DIR$/src/game/util/imgtoshell.py" />
         <option value="$PROJECT_DIR$/src/game/input/cmdinterface.py" />
+        <option value="$PROJECT_DIR$/src/game/input/controlledinput.py" />
       </list>
     </option>
   </component>
@@ -453,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519858849656</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed print functions and added &quot;delayed&quot; printing">
+      <created>1519988018468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1519988018469</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -497,7 +492,8 @@
     <MESSAGE value="committest" />
     <MESSAGE value="big stuffs" />
     <MESSAGE value="stuffs" />
-    <option name="LAST_COMMIT_MESSAGE" value="stuffs" />
+    <MESSAGE value="changed print functions and added &quot;delayed&quot; printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed print functions and added &quot;delayed&quot; printing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -662,6 +658,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +666,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -732,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/input/controlledinput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -753,16 +743,6 @@
         <state relative-caret-position="396">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/classes/dummy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#1#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,6 +822,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/input/cmdinterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/level/level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
@@ -850,13 +840,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/input/cmdinterface.py">
+    <entry file="file://$PROJECT_DIR$/src/game/classes/dummy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="432">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#1#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/input/controlledinput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
