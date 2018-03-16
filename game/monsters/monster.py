@@ -2,6 +2,10 @@ from ..player import Entity
 import random
 class Monster(Entity):
 
+    class Phase():
+        def __init__(self,atHP):
+            pass
+
     target = Entity("db",1)
 
     def selectTarget(self,players,rand):
@@ -13,7 +17,7 @@ class Monster(Entity):
         else:
             print "db specific"
     # def doTurn(self,players):
-    #     print "db monster do turn"
+    #     print "db monster do turn"1
     #     #select spell random
     #     #select target random
     def doTurnTick(self):
