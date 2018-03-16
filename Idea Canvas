@@ -1,0 +1,62 @@
+Entity Properties
+    Name
+    HP
+    Resource(s)
+    Inventory (list)
+    Spell (List)
+    Speed (initiative. the order of attack during combat)
+    Effect List (CC, Buffs, Debuffs, etc)
+    Main-Hand
+    Off-Hand
+    Level
+
+    Note regarding level:
+
+
+Types of Damage
+    Physical
+    Necrotic
+    Fire
+    Water
+    Frost
+    Electric
+    Nature
+    Holy
+    Chaos
+    Void
+
+beginning of player turn
+    loop through effects
+    each effect runs series of methods to implement effect
+    has timer/lifespan (number of turns)
+    destroy method at end of lifespan
+
+
+Actions
+    actions are defined as anything that an entity "does" whether it be casting a fireball, swinging a sword, yelling
+    or drinking a vial of potion, these are all "actions"
+
+    Types:
+        Spell requires you to speak
+        Ability requires you to move
+        Thought requires you to think
+
+
+CC Types
+    stunned (unable to do anything)
+    silenced (unable to cast spells)
+    snared (unable to use abilities)
+    clouded (unable to use thought)
+    petrified (unable to cast spells or use abilities, however able to use thought)
+    enraged (your targeted abillities attacks target a random enemy)
+    insane (whatever targeted action you choose targets a random target, either friend or foe)
+
+
+Scenario
+    Each scenario has a list of adjacent scenarios
+
+    Level (combat)
+    Menu (any menu, not just main. main menu, save menu, credits, after end of boss where-to selection)
+    Travel
+        Using connected, statically defined Nodes that represent "rooms"
+

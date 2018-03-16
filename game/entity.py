@@ -7,6 +7,8 @@ class Entity(object):
         self.hp = hp
         self.inventory = []
         self.spells = []
+        self.effectlist = []
+        self
 
 
 
