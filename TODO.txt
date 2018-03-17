@@ -1,2 +1,11 @@
 
 refactor scenario system
+
+
+go through Idea canvas and correct things progressively to begin primary development->>
+    Entity Properties
+    Types of Damage
+    Beginning of player turn
+    Actions
+    CC Types
+    Scenarios

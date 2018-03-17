@@ -10,7 +10,7 @@ Entity Properties
     Off-Hand
     Level
 
-    Note regarding level:
+    Note regarding level: stats will be normalized across all entities, and scaled relative to level. *scale tbd*
 
 
 Types of Damage
@@ -25,7 +25,9 @@ Types of Damage
     Chaos
     Void
 
-beginning of player turn
+
+
+Beginning of Player Turn
     loop through effects
     each effect runs series of methods to implement effect
     has timer/lifespan (number of turns)
@@ -53,10 +55,10 @@ CC Types
 
 
 Scenario
-    Each scenario has a list of adjacent scenarios
+    Each scenario has a list of adjacent scenario "nodes"
 
     Level (combat)
     Menu (any menu, not just main. main menu, save menu, credits, after end of boss where-to selection)
     Travel
         Using connected, statically defined Nodes that represent "rooms"
-
+    Dialogue (talking to characters with multiple options) (INCLUDES SHOPS)

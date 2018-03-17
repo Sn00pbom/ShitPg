@@ -8,10 +8,11 @@ class Entity(object):
         self.inventory = []
         self.spells = []
         self.effectlist = []
-        self
+        self.gold = 0
 
 
-
+    def addGold(self,num):
+        self.gold += num
 
     def doTurn(self,opponents):
         self.announce()

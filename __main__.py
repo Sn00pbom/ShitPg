@@ -1,7 +1,7 @@
 
-
-
-
+from game.world.travelnode import TravelNode
+from game.world.w1_1 import w1_1
+from game.item.items import Items
 from game.level import level
 from game.level.leveldef import *
 from game.player import Player
@@ -53,6 +53,8 @@ def go():
 # print getIn(['1','2','3','4'])
 # testGetch()
 
+# JAVA IS FUCKING AIDS
+#
 
 running = True
 def primaryLoop():
@@ -65,6 +67,7 @@ def primaryLoop():
 
 
 
-primaryLoop()
-
+# primaryLoop()
+weapon = Items.BONE_KNIFE
+TravelNode.goToNode(w1_1)
 # dummysub()
