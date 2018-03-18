@@ -1,6 +1,7 @@
+from game import input
+from scenariomenu import ScenarioMenu
 
-
-class Level:
+class ScenarioLevel(object):
     subLevels = [] ##Level array can be appended check for sublevels
     players = [] ##array of Instantiated classes
     monsters = []#array of monsters
@@ -8,9 +9,8 @@ class Level:
     def __init__(self,name):
         self.name = name
 
-        print "db init"
 
-    def doRound(self):
+    def do(self):
         print "db roundstart"
 
         #player array loop turns
@@ -36,12 +36,19 @@ class Level:
         self.doAllRoundEndTicks()
         print "db roundend"
 
+
+        if self.anyPlayersAlive() == False:
+            return None
+        elif self.anyMonstersAlive() == False:
+            return ScenarioMenu("MainMenu")
+        return self
+
     def anyPlayersAlive(self):
 
         for player in self.players:
             if player.isAlive():
                 return True
-        print "Party has wiped!"
+        input.delay_print("Party has wiped!")
         return False
     def anyMonstersAlive(self):
         for monster in self.monsters:
@@ -68,8 +75,8 @@ class Level:
     #     self.monsters = updated
 
 def doLevel(level):
-    if not level.subLevels:#check if level has sublevels or "phases"
-        print "db nosublevel beginning level..."
+    if not level.subLevels:#check if scenario has sublevels or "phases"
+        print "db nosublevel beginning scenario..."
 
         while level.anyPlayersAlive() and level.anyMonstersAlive():
             level.doRound()

@@ -1,7 +1,7 @@
 
 from ..classes import *
 from ..monsters import *
-from level import Level
+from scenariolevel import ScenarioLevel
 
 
 def level1():
@@ -17,7 +17,7 @@ def level1():
         monsters.append(Basicbitch("BB"+str(i+1),11))
 
     print "db " + str(players)
-    level = Level("Level1")
+    level = ScenarioLevel("Level1")
     level.players = players
     level.monsters = monsters
     return level
@@ -29,12 +29,12 @@ def levelSubDummy():
     monsters.append(Basicbitch("Basic Bitch", 15))
     monsters.append(Basicbitch("Basic Bitch", 15))
     monsters.append(Basicbitch("Basic Bitch", 20))
-    level = Level("LevelwSub")
-    levels1 = Level("Phase1")
+    level = ScenarioLevel("LevelwSub")
+    levels1 = ScenarioLevel("Phase1")
     levels1.players = players
     levels1.monsters = monsters
     monsters.append(Basicbitch("bb4:",30))
-    levels2 = Level("Phase2")
+    levels2 = ScenarioLevel("Phase2")
     levels2.players = players
     levels2.monsters = monsters
 
@@ -52,7 +52,7 @@ def levelDummy():
     monsters.append(Basicbitch("Basic Bitch", 15))
     monsters.append(Basicbitch("Basic Bitch", 15))
     monsters.append(Basicbitch("Basic Bitch", 15))
-    level = Level("DummyLevel")
+    level = ScenarioLevel("DummyLevel")
     level.players = players
     level.monsters = monsters
     return level

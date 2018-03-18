@@ -1,7 +1,7 @@
 from game import input
 from game.input.cmdinterface import delay_print as dprint
-from game.level import level
-from game.level import leveldef
+from game.scenario import scenariolevel
+from game.scenario import leveldef
 import pyfiglet
 
 #these must always have travelnode as parameter
@@ -43,4 +43,4 @@ def behw1_2(travelnode):
     print "this is custom behavior on b_2 node"
 
 def behw1_2_2(travelnode):
-    level.doLevel(leveldef.levelDummy())
+    scenariolevel.doLevel(leveldef.levelDummy())

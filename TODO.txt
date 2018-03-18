@@ -1,5 +1,7 @@
-
+redo primary game loop
 refactor scenario system
+saving
+loading
 
 
 go through Idea canvas and correct things progressively to begin primary development->>
