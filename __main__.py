@@ -1,6 +1,7 @@
 
-from game.world.travelnode import TravelNode
-from game.world.w1_1 import w1_1
+
+import game.world as world
+
 from game.item.items import Items
 from game.level import level
 from game.level.leveldef import *
@@ -52,11 +53,27 @@ def go():
 # print controlledIn(['1','2','3'])
 # print getIn(['1','2','3','4'])
 # testGetch()
+def mainMenu():
+    printTitle()
+    delay_print("1: Begin game\n2: Save\n3: Load\n4: Quit")
+    inp = controlledinput.getIn(['1', '2', '3', '4'])
+    if inp == '1':
+        world.goToNode(world.Nodes.b_1)
+        # dummy(running)
+    elif inp == '4':
+        delay_print("Quitting................")
+        sys.exit()
+    elif inp == '2':
+        # save
+        pass
+    elif inp == '3':
+        # load
+        pass
 
-# JAVA IS FUCKING AIDS
-#
 
 running = True
+
+
 def primaryLoop():
 
     while running:
@@ -69,5 +86,11 @@ def primaryLoop():
 
 # primaryLoop()
 weapon = Items.BONE_KNIFE
-TravelNode.goToNode(w1_1)
+weapon2 = Items.BONE_FRAGMENT
+
+print weapon.name
+print weapon2.name
+
+world.goToNode(world.Nodes.b_2)
+
 # dummysub()

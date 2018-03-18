@@ -32,6 +32,14 @@ def printEntitiesInList(entities):
         # print "  HP: " + str(e.hp)
         i += 1
 
+def printStringList(list):
+    i = 0
+
+    for e in list:
+        delay_print(str(i + 1) + " " + e)
+
+        i += 1
+
 def printTitle():
     title = """\
     #######################################################
