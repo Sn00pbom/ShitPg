@@ -18,10 +18,10 @@ import getch
 def dummysub():
 
     level.doLevel(levelSubDummy())
-def dummy(running):
+def dummy():
 
     level.doLevel(levelDummy())
-    running = False
+    # running = False
 def go1():
     level.doLevel(level1())
 def go():
@@ -85,12 +85,12 @@ def primaryLoop():
 
 
 # primaryLoop()
-weapon = Items.BONE_KNIFE
-weapon2 = Items.BONE_FRAGMENT
+# weapon = Items.BONE_KNIFE
+# weapon2 = Items.BONE_FRAGMENT
+#
+# print weapon.name
+# print weapon2.name
 
-print weapon.name
-print weapon2.name
-
-world.goToNode(world.Nodes.b_2)
-
+# world.goToNode(world.Nodes.b_2)
+mainMenu()
 # dummysub()

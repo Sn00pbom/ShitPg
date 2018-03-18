@@ -2,7 +2,7 @@ from ..entity import Entity
 import time
 import sys
 import pyfiglet
-from ..util import imgtoshell
+# from ..util import imgtoshell
 
 def delay_print(s,newline = None): #prints a string progressively. can be used as a "wait timer" between actions by using ............
     for c in s:

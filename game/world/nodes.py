@@ -8,10 +8,12 @@ class Nodes():
     b_1 = TravelNode("The Beginning",behw1_1)
     b_2 = TravelNode("An Empty Area in the woods.",behw1_2)
     b_2_1 = TravelNode("???",nobeh)
+    b_2_2 = TravelNode("?????????????",behw1_2_2)
 
 
 
     #define connected nodes
     b_1.nodes = [b_2]
     b_2.nodes = [b_1,b_2_1]
-    b_2_1.nodes = [b_2]
+    b_2_1.nodes = [b_2,b_2_2]
+    b_2_2.nodes = [b_1]
