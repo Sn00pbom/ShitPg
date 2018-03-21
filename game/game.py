@@ -8,10 +8,13 @@ import input
 # Allow turn execution
 # Transfer turn
 #kk
+party = None
+scenario = None
 
-
-def game_loop(scenario):
+def game_loop(scen):
     running = True
+    scenario = scen
+    print "dba"
     while running:
         scenario = scenario.do()
         if scenario == None:

@@ -1,5 +1,6 @@
 from game import input
 from scenariomenu import ScenarioMenu
+from game import game
 
 class ScenarioLevel(object):
     subLevels = [] ##Level array can be appended check for sublevels
@@ -38,9 +39,9 @@ class ScenarioLevel(object):
 
 
         if self.anyPlayersAlive() == False:
-            return None
-        elif self.anyMonstersAlive() == False:
             return ScenarioMenu("MainMenu")
+        elif self.anyMonstersAlive() == False:
+            return game.party.node
         return self
 
     def anyPlayersAlive(self):
@@ -79,7 +80,7 @@ def doLevel(level):
         print "db nosublevel beginning scenario..."
 
         while level.anyPlayersAlive() and level.anyMonstersAlive():
-            level.doRound()
+            level.do()
 
     else:
         print "db hassublevel"

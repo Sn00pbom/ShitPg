@@ -12,6 +12,68 @@ Entity Properties
 
     Note regarding level: stats will be normalized across all entities, and scaled relative to level. *scale tbd*
 
+Weapon Classifications
+    M: melee only
+    R: ranged only
+
+    1H LightSharp M
+    1H Sharp M
+    2H Sharp M
+    1H Blunt M
+    2H Blunt M
+    Bow (2H) R
+    2H Magic R
+    1H Magic R
+
+
+    1H/2H NonWeapon (still an object that provides stats, just not necessarily a weapon. i.e. Lute)
+
+Class Types
+    Rogue
+        energy
+            fully replenishes out of combat. increases every turn to a cap
+        melee
+        1H LightSharp
+    Mage
+        mana
+            fully replenishes out of combat. capped based on level. increases only with potions in combat
+        ranged
+    Bard
+        inspiration
+            fully replenishes out of combat. increases when damage occurs in combat, and glorious songs are sung.
+        neutral
+    Hunter
+        focus
+            increases every turn to a cap, however taking damage reduces it by a fixed amount
+        ranged
+    Warrior
+        rage
+            fully depletes out of combat. increases by taking damage
+        melee
+    Bouncer
+        thicc
+            fully depletes out of combat. increases by casting "Consume Meat".
+            decreases a fixed amount every time damage is incurred. grants % damage reduction based on amount.
+        melee
+    Priest
+        purity
+            fully replenishes out of combat. increases by casting "Pray".
+            decreases by casting any spell with an "impure" intent.
+        mana
+        ranged
+    Paladin
+        faith
+            fully replenishes out of combat. depletes when teammates drop below a fixed % hp
+        mana
+            fully replenishes out of combat. capped based on level. increases only with potions in combat
+        melee
+    Druid
+        fatigue
+            fully depletes out of combat. decreases a set amount per turn. increases by shapeshifting
+        mana
+            fully replenishes out of combat. capped based on level. increases only with potions in combat
+        melee
+
 
 Types of Damage
     Physical
@@ -62,3 +124,7 @@ Scenario
     Travel
         Using connected, statically defined Nodes that represent "rooms"
     Dialogue (talking to characters with multiple options) (INCLUDES SHOPS)
+
+Items
+    Adderall
+        provides infinite focus, energy, or for 5 turns
