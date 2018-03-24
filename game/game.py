@@ -10,6 +10,7 @@ import input
 #kk
 party = None
 scenario = None
+nodes = {}#global nodes
 
 def game_loop(scen):
     running = True

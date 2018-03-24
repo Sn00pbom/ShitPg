@@ -1,8 +1,8 @@
-
+import statemanage
 from game import game
 
-#LOAD PRESETS
+#LOAD STATES
+statemanage.loadAll("save1.json")
 
 
-
-game.game_loop(None)#run the loaded scenario
+game.game_loop(game.scenario)#run the loaded scenario

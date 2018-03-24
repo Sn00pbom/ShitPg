@@ -34,9 +34,9 @@ def behw1_1(travelnode):
     def norape():
         dprint("You remember being woken here unpleasantly...")
 
-    if travelnode.prop1 == 0:
+    if travelnode.prop["prop1"] == 0:
         rape()
-    elif travelnode.prop1 == 1:
+    elif travelnode.prop["prop2"] == 1:
         norape()
 
 
@@ -59,4 +59,9 @@ def behw1_2_2(travelnode):
         return leveldef.levelDummy()
 
 
-
+all = {#put all function definitions in the dictionary
+    "nobeh":nobeh,
+    "beh1":behw1_1,
+    "beh2":behw1_2,
+    "beh3":behw1_2_2
+}
