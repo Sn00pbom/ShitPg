@@ -13,20 +13,20 @@ def nobeh(travelnode=None):
 def behw1_1(travelnode):
 
     def rape():
-        dprint("You've woken up in the woods. You're being raped by some boars.......\n" \
+        dprint("You've woken up in the woods. You're being attacked by some boars.......\n" \
                           "Press 1 to punch the boars and knock them out............")
 
         input.printStringList(["Punch Boars in da mouf","Do nuffin"])
         choice = input.selectFromList([1,2])
         if choice == 1:
             dprint("The Boars drop dead, and turn instantly to dust.......")
-            travelnode.prop1 = 1
+            travelnode.prop["attacked"]=1
         elif choice == 2:
-            dprint("The Boars continue to relentlessly rape you in the bum.\n"
+            dprint("The Boars continue to relentlessly attack you in the gut.\n"
                    ".............\n"
                    "You've decided to do nothing. Your bum hurts.\n"
                    "................\n"
-                   "You die from bum rape")
+                   "You die from bleeding....")
             print pyfiglet.figlet_format("(  .  )(  .  )", input.FONT_ALLIGATOR)
             return ScenarioMenu("Main")
 
@@ -34,9 +34,9 @@ def behw1_1(travelnode):
     def norape():
         dprint("You remember being woken here unpleasantly...")
 
-    if travelnode.prop["prop1"] == 0:
+    if travelnode.prop["attacked"] == 0:
         rape()
-    elif travelnode.prop["prop2"] == 1:
+    elif travelnode.prop["attacked"] == 1:
         norape()
 
 
@@ -57,11 +57,16 @@ def behw1_2_2(travelnode):
         input.delay_print(pyfiglet.figlet_format("Fight",input.FONT_ALLIGATOR),sleep=0.002)
         travelnode.prop1 = 1 #fight no rerun
         return leveldef.levelDummy()
-
+def sw_4(travelnode):
+    print "beh4"
+def well1_2(travelnode):
+    print "fight will be here"
 
 all = {#put all function definitions in the dictionary
     "nobeh":nobeh,
-    "beh1":behw1_1,
+    "sw_1":behw1_1,
     "beh2":behw1_2,
-    "beh3":behw1_2_2
+    "beh3":behw1_2_2,
+    "sw_4": sw_4,
+    "well1_2": well1_2
 }

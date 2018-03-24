@@ -31,17 +31,21 @@ class TravelNode(object):
             self.name = nodeDef["name"]  # display name
             self.zonename = zonename
             self.rawname = rawname  # generated from load dic path
-            self.behavior = behavior.all[nodeDef["behavior"]]  # link to function def in behavior module
             self.connected = nodeDef["connected"]
             try:
-                for key in nodeDef["properties"]:
-                    self.prop[key] = nodeDef["properties"][key]
+                for key in nodeDef["prop"]:
+                    self.prop[key] = nodeDef["prop"][key]
             except:
                 pass  # no properties field found in node definition
+            try:
+                self.behavior = behavior.all[nodeDef["behavior"]]  # link to function def in behavior module
+            except:
+                    self.behavior = behavior.all["nobeh"]  # sets no no behavior if error occurs or no behavior defined
 
 
         except:
             print "Node definition loading failed... exiting..."
+            print "Failed at: " + rawname
             exit(0)
 
 

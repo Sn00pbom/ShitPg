@@ -2,6 +2,34 @@ import os
 import json
 from game.world.travelnode import TravelNode
 from game import game
+from game.input import controlledinput
+from game.input import cmdinterface
+
+def chooseLoc(includenew = False):
+    folder = "./data/save/"
+    locs = []
+    for loc in os.listdir(folder):
+        locs.append(str(loc))
+    newstr = "NEWSAVE: save" + str(len(locs)+1)
+    if includenew: locs.append(newstr)
+    cmdinterface.printStringList(locs)
+    input = controlledinput.selectFromList(locs)
+    saveas = ""
+    if input == newstr:
+        saveas = "save" + str(len(locs)) + ".json"
+    else:
+        saveas = input
+    return saveas
+
+def saveParty():
+    pass
+    #TODO fix this to work completely after we fully implement classes in party
+    pass
+def saveAll():
+    loc = chooseLoc()
+
+    #save party data
+    #save node data
 
 def loadTravelNodeDefs():
     # this will
@@ -74,12 +102,13 @@ def printAllTravelNodes():
         node = game.nodes[globalTravelNodeKey]
         for directionKey in node.connected:
             print "     " +directionKey + " " + node.connected[directionKey].rawname
-        print "     " + globalTravelNodeKey + " properties:"
+        print "     " + globalTravelNodeKey + " prop(erties):"
         for propertyKey in node.properties:
             # print propertyKey
             print "          " + propertyKey + " " + str(node.properties[propertyKey])
 
 def loadAll(fileName):
+    print chooseLoc(True)
     loadTravelNodeDefs()
     loadTravelNodePlayerdata(fileName)
-
+    # chooseLoc()

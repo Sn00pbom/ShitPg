@@ -1,0 +1,43 @@
+{
+  "spawnworld":{
+    "sw_1":{
+      "name": "The Beginning",
+      "behavior": "sw_1",
+      "connected":{
+        "further into the woods": "sw_2"
+      },
+      "prop":{
+        "attacked":0
+      }
+    },
+    "sw_2":{
+      "name": "deep in the woods",
+      "connected":{
+        "down a narrow path":"sw_2-1",
+        "back to to the start": "sw_1",
+        "eastward": "sw_3"
+      }
+    },
+    "sw_2-1":{
+      "name":"a dark zone with a well...",
+      "connected":{
+        "to where you came":"sw_2",
+        "into the well":"well1.start"
+      }
+    },
+    "sw_3":{
+      "name": "???",
+      "connected":{
+        "westward":"sw_2",
+        "eastward":"sw_4"
+      }
+    },
+    "sw_4":{
+      "name":"an area in the woods with some light",
+      "connected":{
+        "westward":"sw_3",
+        "towards the light":"sw_3"
+      }
+    }
+  }
+}

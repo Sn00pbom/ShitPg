@@ -1,0 +1,24 @@
+{
+  "well1":{
+    "start":{
+      "name":"the bottom of a well",
+      "connected":{
+        "into a cavern":"n1"
+      }
+    },
+    "n1":{
+      "name":"a dark cavern",
+      "connected":{
+        "back": "start",
+        "into a very dark room on the right":"n2"
+      }
+    },
+    "n2":{
+      "name":"a very dark room",
+      "behavior":"well1_2",
+      "connected":{
+        "up to the surface": "spawnworld.sw_2-1"
+      }
+    }
+  }
+}

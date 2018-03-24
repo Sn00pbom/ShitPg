@@ -1,8 +1,9 @@
-redo primary game loop
-refactor scenario system
+//redo primary game loop
+//refactor scenario system
 saving
+    -partially done, need to fully implement
 loading
-
+    -partially dont, need to fully implement
 
 go through Idea canvas and correct things progressively to begin primary development->>
     Entity Properties
